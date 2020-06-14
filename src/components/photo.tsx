@@ -3,20 +3,14 @@ import './photo.css';
 
 interface IPhotoProps {
   imgSrc: string;
+  handleSelectPhoto: ((event: React.MouseEvent<HTMLImageElement, MouseEvent>) => void) | undefined;
 }
 
 class Photo extends React.Component<IPhotoProps> {
-  imageClick() {
-    console.log("Eventually bring up the image.")
-  }
-
   render() {
     return (
-      // A link to the image
-      <div className="Photo">
-        {/* <a href="/#"> */}
-        <img src={this.props.imgSrc} alt="" onClick={this.imageClick} loading="lazy" />
-        {/* </a> */}
+      <div className="photo">
+        <img src={this.props.imgSrc} alt="" onClick={this.props.handleSelectPhoto} loading="lazy" />
       </div>
     )
   }

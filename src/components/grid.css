@@ -1,5 +1,5 @@
-.PhotoGrid {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
