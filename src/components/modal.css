@@ -15,4 +15,5 @@
 .modal-photo {
     max-width: 80vw;
     max-height: 80vh;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.7);
 }

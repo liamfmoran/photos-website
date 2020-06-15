@@ -10,7 +10,9 @@ class Modal extends React.Component<IModalProps> {
   render() {
     return (
       <div className="modal" onClick={this.props.handleClickModal}>
-        <img className="modal-photo" src={this.props.imgSrc} alt="" />
+        <a href={this.props.imgSrc} target="_blank" rel="noopener noreferrer">
+          <img className="modal-photo" src={this.props.imgSrc} alt="" />
+        </a>
       </div>
     )
   }
